@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on DM Analytics</title>
-    <link>/categories/r/</link>
+    <link>https://dmanalytics.netlify.app/categories/r/</link>
     <description>Recent content in R on DM Analytics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-ecu</language>
-    <lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://dmanalytics.netlify.app/categories/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Modelo Nowcasting predicción ciclo económico Ecuador</title>
-      <link>/blog/2020-06-01-nowcasting/</link>
+      <link>https://dmanalytics.netlify.app/blog/2020-06-01-nowcasting/</link>
       <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020-06-01-nowcasting/</guid>
+      <guid>https://dmanalytics.netlify.app/blog/2020-06-01-nowcasting/</guid>
       <description>Proyectar como se comportará el crecimiento económico de un país permite tomar decisiones con anticipación, evitar perdidas y ajustarse al mercado. Los modelos nowcasting permiten que el ajuste sea muy cercano al real, debido a su capacidad de incorporar información de distintos sectores económicos. Usando variables con frecuencia mensual permiten proyectar variables con frecuencia trimestral.
 Breve definición del modelo nowcastingLos modelos nowcasting se han vuelto populares especialmente para los bancos centrales, debido a que permiten proyectar el futuro en base al comportamiento de indicadores del pasado.</description>
     </item>
     
     <item>
       <title>¿Mayor gasto en educación es igual a mayor calidad?</title>
-      <link>/blog/educacion/</link>
+      <link>https://dmanalytics.netlify.app/blog/educacion/</link>
       <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/educacion/</guid>
+      <guid>https://dmanalytics.netlify.app/blog/educacion/</guid>
       <description>Todos los años el estado asigna un presupuesto hacia las instituciones públicas que dependen sus ingresos. Para la asignación se usa una proyección sobre los ingresos futuros que percibirá. En caso que existan eventualidades o externalidades que afecten dichas proyecciones, se deben hacerse ajustes al presupuesto, para que las asignaciones sean acordes con los ingresos a percibir.
 Mientras la economía mantenga en un ciclo económico creciente, implica que se incrementará el presupuesto.</description>
     </item>
     
     <item>
       <title>¿A cuanto asciende la deuda pública del Ecuador?</title>
-      <link>/blog/deudapublica/</link>
+      <link>https://dmanalytics.netlify.app/blog/deudapublica/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/deudapublica/</guid>
+      <guid>https://dmanalytics.netlify.app/blog/deudapublica/</guid>
       <description>Según la constitución del Ecuador el endeudamiento público se puede dar cumpliendo las siguientes regulaciones:
 Se obtendrá endeudamiento público cuando los ingresos fiscales y recursos provenientes de cooperaciones internacionales sean insuficientes.
 Se velará que no afecte a la soberanía, derechos, buen vivir y preservación de la naturaleza.
@@ -42,10 +42,10 @@ Se obtendrá endeudamiento público cuando los ingresos fiscales y recursos prov
     
     <item>
       <title>Evolución Reservas Internacionales Ecuador</title>
-      <link>/blog/reservasint/</link>
+      <link>https://dmanalytics.netlify.app/blog/reservasint/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/reservasint/</guid>
+      <guid>https://dmanalytics.netlify.app/blog/reservasint/</guid>
       <description>Las reservas internacionales (RI) son los recursos financieros acumulados que tiene un país para garantizar el pago de deudas, estabilizar la economía, externalidades negativas o eventos imprevistos.
 Están compuestas por:
 1. Posición neta de divisas: Dinero en diferentes divisas, depósitos en bancos del exterior e inversiones a plazo o en títulos.

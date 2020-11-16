@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DM Analytics</title>
-    <link>/</link>
+    <link>https://dmanalytics.netlify.app/</link>
     <description>Recent content on DM Analytics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-ecu</language>
-    <lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://dmanalytics.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Modelo Nowcasting predicción ciclo económico Ecuador</title>
-      <link>/blog/2020-06-01-nowcasting/</link>
+      <link>https://dmanalytics.netlify.app/blog/2020-06-01-nowcasting/</link>
       <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020-06-01-nowcasting/</guid>
+      <guid>https://dmanalytics.netlify.app/blog/2020-06-01-nowcasting/</guid>
       <description>Proyectar como se comportará el crecimiento económico de un país permite tomar decisiones con anticipación, evitar perdidas y ajustarse al mercado. Los modelos nowcasting permiten que el ajuste sea muy cercano al real, debido a su capacidad de incorporar información de distintos sectores económicos. Usando variables con frecuencia mensual permiten proyectar variables con frecuencia trimestral.
 Breve definición del modelo nowcastingLos modelos nowcasting se han vuelto populares especialmente para los bancos centrales, debido a que permiten proyectar el futuro en base al comportamiento de indicadores del pasado.</description>
     </item>
     
     <item>
       <title>¿Mayor gasto en educación es igual a mayor calidad?</title>
-      <link>/blog/educacion/</link>
+      <link>https://dmanalytics.netlify.app/blog/educacion/</link>
       <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/educacion/</guid>
+      <guid>https://dmanalytics.netlify.app/blog/educacion/</guid>
       <description>Todos los años el estado asigna un presupuesto hacia las instituciones públicas que dependen sus ingresos. Para la asignación se usa una proyección sobre los ingresos futuros que percibirá. En caso que existan eventualidades o externalidades que afecten dichas proyecciones, se deben hacerse ajustes al presupuesto, para que las asignaciones sean acordes con los ingresos a percibir.
 Mientras la economía mantenga en un ciclo económico creciente, implica que se incrementará el presupuesto.</description>
     </item>
     
     <item>
       <title>¿A cuanto asciende la deuda pública del Ecuador?</title>
-      <link>/blog/deudapublica/</link>
+      <link>https://dmanalytics.netlify.app/blog/deudapublica/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/deudapublica/</guid>
+      <guid>https://dmanalytics.netlify.app/blog/deudapublica/</guid>
       <description>Según la constitución del Ecuador el endeudamiento público se puede dar cumpliendo las siguientes regulaciones:
 Se obtendrá endeudamiento público cuando los ingresos fiscales y recursos provenientes de cooperaciones internacionales sean insuficientes.
 Se velará que no afecte a la soberanía, derechos, buen vivir y preservación de la naturaleza.
@@ -42,10 +42,10 @@ Se obtendrá endeudamiento público cuando los ingresos fiscales y recursos prov
     
     <item>
       <title>Evolución Reservas Internacionales Ecuador</title>
-      <link>/blog/reservasint/</link>
+      <link>https://dmanalytics.netlify.app/blog/reservasint/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/reservasint/</guid>
+      <guid>https://dmanalytics.netlify.app/blog/reservasint/</guid>
       <description>Las reservas internacionales (RI) son los recursos financieros acumulados que tiene un país para garantizar el pago de deudas, estabilizar la economía, externalidades negativas o eventos imprevistos.
 Están compuestas por:
 1. Posición neta de divisas: Dinero en diferentes divisas, depósitos en bancos del exterior e inversiones a plazo o en títulos.
@@ -58,60 +58,60 @@ Están compuestas por:
     
     <item>
       <title>Automatización de reportes</title>
-      <link>/portfolio/automatizaci%C3%B3n-reportes-y-panel-de-control/</link>
+      <link>https://dmanalytics.netlify.app/portfolio/automatizaci%C3%B3n-reportes-y-panel-de-control/</link>
       <pubDate>Thu, 12 Jul 2018 16:58:55 +0600</pubDate>
       
-      <guid>/portfolio/automatizaci%C3%B3n-reportes-y-panel-de-control/</guid>
+      <guid>https://dmanalytics.netlify.app/portfolio/automatizaci%C3%B3n-reportes-y-panel-de-control/</guid>
       <description>Es común que se requiera información recurrente para la toma de decisiones. Sin embargo, realizar informes o reportes periódicamente involucra que personal dedique gran parte de su tiempo a realizarlo, cuando podría enfocarse en aspectos más productivos.
 Automatizar reportes o informes periodicos  Este producto esta destinado hacia empresas que buscan mejorar los tiempos de respuesta, optimizar sus procesos y reducir el tiempo de personal en actividades repetitivas. El objetivo no es generar un software para su aplicación, más bien es usar eficientemente las herramientas básicas que todos conocen como Microsoft Office más una programación sencilla.</description>
     </item>
     
     <item>
       <title>Segmentación de mercado</title>
-      <link>/portfolio/modelos-marketing/</link>
+      <link>https://dmanalytics.netlify.app/portfolio/modelos-marketing/</link>
       <pubDate>Thu, 12 Jul 2018 16:57:54 +0600</pubDate>
       
-      <guid>/portfolio/modelos-marketing/</guid>
+      <guid>https://dmanalytics.netlify.app/portfolio/modelos-marketing/</guid>
       <description>La segmentación de mercado es un análisis que permite entender cual es el perfil de nuestro cliente, si existen nichos de mercado no atendidos, si se pueden clasificar nuestros clientes para ofrecer descuentos o servicios premium, si se requieren nuevos productos o requieren que un producto sea modificado, entre otros.
 Perfil del cliente  Este análisis busca conocer cual es el perfil de nuestros compradores y porqué adquieren nuestros productos. Entender quien es nuestro cliente objetivo, es importante si queremos incrementar ventas, atraer nuevos consumidores o realizar una campaña de marketing.</description>
     </item>
     
     <item>
       <title>Modelos probabilisticos</title>
-      <link>/portfolio/modelos-de-probabilidad/</link>
+      <link>https://dmanalytics.netlify.app/portfolio/modelos-de-probabilidad/</link>
       <pubDate>Thu, 12 Jul 2018 16:56:54 +0600</pubDate>
       
-      <guid>/portfolio/modelos-de-probabilidad/</guid>
+      <guid>https://dmanalytics.netlify.app/portfolio/modelos-de-probabilidad/</guid>
       <description>Los modelos probabilisticos permiten clasificar en el caso de variables cuantitativas y permiten calcular la probabilidad numérica en el caso de variables cualitativas.
 Modelos credit scoring  Calcula la probabilidad de que un cliente que pidió un crédito pague o no la siguiente cuota, tomando como variables aspectos cualitativos y cuantitativos como por ejemplo su nivel de educación, estado civil, ingresos netos, movimientos de cuenta, etc. Permiten anticiparse y preveer la liquidez necesaria para que no afecte el funcionamiento del negocio.</description>
     </item>
     
     <item>
       <title>Estudios financieros</title>
-      <link>/portfolio/estudios-financieros-y-de-mercado/</link>
+      <link>https://dmanalytics.netlify.app/portfolio/estudios-financieros-y-de-mercado/</link>
       <pubDate>Thu, 12 Jul 2018 16:54:54 +0600</pubDate>
       
-      <guid>/portfolio/estudios-financieros-y-de-mercado/</guid>
+      <guid>https://dmanalytics.netlify.app/portfolio/estudios-financieros-y-de-mercado/</guid>
       <description>La economía es un ser cambiante, influenciado por factores internos y externos. Su variación a su vez afecta al comportamiento de los individuos y de los negocios.
 Muchos negocios toman decisiones sobre ventas, captación de clientes, inventarios, inversiones, entre otros. Solamente tomando en cuenta la perspectiva del negocio. Dejando de lado la influencia del entorno macroeconómico y microeconómico. Este error, conlleva a perdidas financieras, incumplimiento de objetivos y perdida de eficiencia.</description>
     </item>
     
     <item>
       <title>Evaluación de impacto</title>
-      <link>/portfolio/evaluaci%C3%B3n-de-pol%C3%ADticas/</link>
+      <link>https://dmanalytics.netlify.app/portfolio/evaluaci%C3%B3n-de-pol%C3%ADticas/</link>
       <pubDate>Thu, 12 Jul 2018 16:53:54 +0600</pubDate>
       
-      <guid>/portfolio/evaluaci%C3%B3n-de-pol%C3%ADticas/</guid>
+      <guid>https://dmanalytics.netlify.app/portfolio/evaluaci%C3%B3n-de-pol%C3%ADticas/</guid>
       <description>Son análisis destinados a medir la eficiencia en la aplicación pasada o futura de realizar una política de gobierno, política dentro de una empresa o de implementar un proyecto.
 Evaluación de políticas públicas  Existen dos etapas, la fase previa a la implementación donde se puede determinar a priori el efecto deseado, costos y beneficios de realizar una política o proyecto. La segunda etapa constituye en la medición de los resultados, verificar si cumplió con los objetivos planteados y cuantificar la afectación de su aplicación.</description>
     </item>
     
     <item>
       <title>Modelos forecasting</title>
-      <link>/portfolio/modelos-de-predicci%C3%B3n/</link>
+      <link>https://dmanalytics.netlify.app/portfolio/modelos-de-predicci%C3%B3n/</link>
       <pubDate>Thu, 12 Jul 2018 16:53:54 +0600</pubDate>
       
-      <guid>/portfolio/modelos-de-predicci%C3%B3n/</guid>
+      <guid>https://dmanalytics.netlify.app/portfolio/modelos-de-predicci%C3%B3n/</guid>
       <description>Los modelos de forecasting permiten predecir el futuro de una variable o su afectación futura en base al comportamiento de otras variables que le afectan. Se usan principalmente proyectar por ejemplo las ventas de una empresa, la liquidez requerida, la cantidad de inventario a acumular, la cantidad de personal a contratar, conocer las fechas con mayores ventas, generar escenarios futuros, entre otros.
 Estudio de estacionalidad  Conocer específicamente las fechas, feriados o festividades en las que las ventas se incrementan o cuando las ventas decrecen es importante para planificar, comprar o requerir personal.</description>
     </item>
