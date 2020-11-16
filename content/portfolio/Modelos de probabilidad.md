@@ -5,7 +5,7 @@ category:
 - product
 date: "2018-07-12T16:56:54+06:00"
 image: images/portfolio/item-3.jpg
-title: Modelos probabilisticos
+title: Modelos probabilísticos
 type: portfolio
 ---
 
