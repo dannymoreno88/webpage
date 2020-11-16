@@ -1,0 +1,111 @@
+---
+title: Modelo Nowcasting predicción ciclo económico Ecuador
+author: Danny Moreno
+date: '2020-10-21'
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+image: images/blog/post-5.jpg
+output:
+  html_document:
+    toc: true
+    number_sections: true
+    fig_caption: true
+    theme: cosmo
+---
+```{r setup, include=FALSE, echo=FALSE,out.width='100%'}
+knitr::opts_chunk$set(echo = TRUE)
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(stats)
+library(highcharter)
+library(lubridate)
+library(zoo)
+library(knitr)
+library(widgetframe)
+library(magrittr)
+library(htmltools)
+library(shiny)
+library(kableExtra)
+
+RMSE <- read_excel("C:\\Users\\danny\\Documents\\Torcuato di Tella\\Tesis TDT\\resultados.xlsx", sheet = "Hoja1",range = "a1:f2")
+colnames(RMSE)[1]<- "Tipo"
+
+forecast <- read_excel("C:\\Users\\danny\\Documents\\Torcuato di Tella\\Tesis TDT\\resultados.xlsx", sheet = "Hoja1",range = "a6:f10")
+
+tasa <- read_excel("C:\\Users\\danny\\Documents\\Torcuato di Tella\\Tesis TDT\\resultados.xlsx", sheet = "Hoja1",range = "a13:b18")
+```
+<div style="text-align: justify">
+
+Proyectar como se comportará el crecimiento económico de un país permite tomar decisiones con anticipación, evitar perdidas y ajustarse al mercado. Los modelos nowcasting permiten que el ajuste sea muy cercano al real, debido a su capacidad de incorporar información de distintos sectores económicos. Usando variables con frecuencia mensual permiten proyectar variables con frecuencia trimestral.  
+<div/>
+
+***
+# Breve definición del modelo nowcasting
+<div style="text-align: justify">
+
+Los modelos nowcasting se han vuelto populares especialmente para los bancos centrales, debido a que permiten proyectar el futuro en base al comportamiento de indicadores del pasado. La economía de un país se ve afectada por varios sectores económicos, por ejemplo el sector real, financiero, cambiario, etc. Este modelo permite incorporar todos estos sectores en el análisis y determinar la proporción de afectación que tienen en el crecimiento económico de un país.
+
+Existen varios tipos de modelos nowcasting. Sin embargo, para este caso se usará el que esta basado en la descomposición de factores. Esta metodología permite determinar de un gran numero de variables su aporte a la variación de una variable respuesta en este caso el PIB que se publica trimestralmente y con un retraso  de tres meses en Ecuador.
+
+Una vez se obtiene las cargas factoriales, se realiza la proyección del PIB mediante el filtro de Kalman. La ventaja de usar este método es que permite que existan valores faltantes en la data es decir que no este balanceada o que no mantengan el mismo nivel de frecuencia, por ejemplo en este caso usamos variables mensuales para proyectar una variable trimestral.
+
+<div/>
+
+***
+# Resultados
+<div style="text-align: justify">
+
+Usé 68 variables con frecuencia mensual y realice distintas metodologías de forecasting como: ARIMA, Neuronal Network (NN), Expectative maximization (EM), Filtro kalman en dos etapas (2s), Filtro Kalman en dos etapas agregado (2s_agg).
+
+
+El ajuste del modelo 2s fue el siguiente:
+<div style="text-align: justify">
+<img src="/blog/2020-06-01-nowcasting_files/graph1.png" width="100%" alt="Modelo 2s">
+</div>
+
+El ajuste del modelo 2s_agg fue el siguiente:
+<div style="text-align: justify">
+<img src="/blog/2020-06-01-nowcasting_files/graph2.png" width="100%" alt="Modelo 2s_agg">
+</div>
+
+Para comparar los modelos se uso RMSE:
+```{r, echo=FALSE}
+RMSE %>%
+  kbl(caption = "RMSE de cada metodología",digits = 2) %>%
+  kable_material(c("striped", "hover"))
+```
+
+Los resultados señalan que los métodos con mayor ajuste son ARIMA, NN y EM. Sin embargo, se debe verificar las proyecciones para 2020.
+
+```{r, echo=FALSE}
+forecast %>%
+  kbl(caption = "Forecast de cada metodología",digits = 2) %>%
+  kable_material(c("striped", "hover"))
+```
+
+Es evidente que ARIMA, NN y EM sobrestiman el resultado, en otras palabras no pueden captar que para 2020 existirá un decrecimiento. Así como lo demuestra el gráfico:
+
+<div style="text-align: justify">
+<img src="/blog/2020-06-01-nowcasting_files/graph3.png" width="100%" alt="Forecast ARIMA y NN">
+</div>
+
+En definitiva, se concluye que usar modelos nowcasting presentan una ventaja significativa para la predicción del ciclo económico. Pueden captar variaciones rapidamente.
+
+<div style="text-align: justify">
+<img src="/blog/2020-06-01-nowcasting_files/graph4.png" width="100%" alt="Forecast 2s y 2s_agg">
+</div>
+
+Por último se calcula la variación económica en función del año anterior:
+
+```{r, echo=FALSE}
+tasa %>%
+  kbl(caption = "Tasa variación PIB",digits = 2) %>%
+  kable_material(c("striped", "hover"))
+```
+
+Para los modelos nowcasting en 2020 existirá un decrecimiento de -6% o -9%. Por otro lado para el modelo ARIMA y NN el decrecimiento será de -0.16% y -0.72%. Mientras que para EM existirá un crecimiento de 3%.
+
+Se concluye que los modelos nowcasting son muy útlies, versatiles y eficaces para predecir a futuro el comporamiento de una variable especifica como el PIB. Sin lugar a duda, es una buena herramienta.
+
+<div/>

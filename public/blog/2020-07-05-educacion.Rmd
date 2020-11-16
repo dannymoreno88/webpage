@@ -1,0 +1,141 @@
+---
+title: ¿Mayor gasto en educación es igual a mayor calidad?
+author: Danny Moreno
+date: '2020-07-05'
+slug: educacion
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+image: images/blog/post-1.jpg
+output:
+  html_document:
+    toc: true
+    number_sections: true
+    fig_caption: true
+    theme: cosmo
+---
+
+
+```{r setup, include=FALSE, eval.expr=FALSE}
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(stats)
+library(highcharter)
+library(lubridate)
+library(zoo)
+library(knitr)
+library(widgetframe)
+library(magrittr)
+library(htmltools)
+library(shiny)
+library(kableExtra)
+
+rm <- read_excel("C:\\Users\\danny\\Documents\\R\\ECU\\Educacion.xlsx", sheet = "Hoja6", range = "g1:i26")
+rm1 <- read_excel("C:\\Users\\danny\\Documents\\R\\ECU\\Educacion.xlsx", sheet = "Hoja6", range = "r1:t4")
+```
+
+***
+<div style="text-align: justify">
+
+Todos los años el estado asigna un presupuesto hacia las instituciones públicas que dependen sus ingresos. Para la asignación se usa una proyección sobre los ingresos futuros que percibirá. En caso que existan eventualidades o externalidades que afecten dichas proyecciones, se deben hacerse ajustes al presupuesto, para que las asignaciones sean acordes con los ingresos a percibir.
+
+Mientras la economía mantenga en un ciclo económico creciente, implica que se incrementará el presupuesto. Por otro lado, cuando el ciclo económico es decreciente, el presupuesto de igual manera, se deberá ajustar a los menores ingresos del país.  
+
+<div/>
+
+
+<div style="text-align: justify">
+<img src="/blog/2020-07-05-educacion_files/graph1.png" width="100%">
+</div>
+
+
+<div style="text-align: justify">
+
+La evolución de la asignación porcentual del presupuesto muestra que existe un incremento del sectorial tesoro nacional pasando de 37% en 2008 a 59% en 2019. Esta cuenta contiene la deuda pública, recursos pre asignados y financiamiento de derivados deficitarios. Como se mostró en otra publicación, el incremento de deuda pública en el gobierno anterior y actual, es la razón por la cual se dedica más del 50% del presupuesto a esta cuenta.
+
+El sectorial de educación muestra un incremento de 11% en 2008 a 14% en 2019. Por su parte el sectorial de salud pasa de 5% en 2008 a 8% en 2019. Si bien, el incremento en estas cuentas no es significativas como en la cuenta anterior, son las cuentas a las que se asigna mayor cantidad de dinero aparte de la anterior.  
+
+
+<div/>
+
+<div style="text-align: justify">
+<img src="/blog/2020-07-05-educacion_files/graph2.png" width="100%">
+</div>
+
+<div style="text-align: justify">
+
+Para el año 2019 el 88% del presupuesto ecuatoriano se repartió en 5 sectores, sectorial tesoro nacional, sectorial educación, sectorial salud, sectorial defensa nacional y sectorial asuntos internos.
+
+Siendo el sectorial tesoro nacional el que tiene mayor participación con 56%, seguido del sectorial educación con 14% y sectorial salud con 8%.  
+
+
+<div/>
+
+<div style="text-align: justify">
+<img src="/blog/2020-07-05-educacion_files/graph4.png" width="100%">
+</div>
+
+
+<div style="text-align: justify">
+
+La evolución del gasto en educación como porcentaje del PIB, muestra un incremento que pasa del 2% en 2003 al 4% en 2019. A partir del año 2008, se incrementa la asignación para este sector, superando el promedio de América Latina, porcentaje que se mantiene hasta 2019.  
+
+<div/>
+
+<div style="text-align: justify">
+<img src="/blog/2020-07-05-educacion_files/graph5.png" width="100%">
+</div>
+
+
+<div style="text-align: justify">
+
+Si tomamos el promedio del gasto en educación como porcentaje del PIB desde 2008 hasta 2019 de los países latinoamericanos, muestra que Ecuador tiene un gasto promedio de 4.49%. 
+Los países con menor gasto son Brasil con 2.28% y Argentina con 1.5%. Mientras que Ecuador, Venezuela y Bolivia tienen un promedio superior a 4%.  
+
+<div/>
+
+<div style="text-align: justify">
+
+Existen 33 universidades públicas, en 7 de estas se concentró el 54% de la asignación presupuestaria en educación. La Universidad de Guayaquil y la Universidad Central del Ecuador concentran el 24% de la asignación, cada una recibió 12% respectivamente. Mientras tanto, la Escuela Politécnica del Litoral recibió el 6%, siendo la mitad de la asignación de las anteriores dos.
+
+<div/>
+
+<div style="text-align: justify">
+<img src="/blog/2020-07-05-educacion_files/graph3.png" width="100%">
+</div>
+
+<div style="text-align: justify">
+
+Las cuentas de gasto de las universidades que reciben mayor cantidad de dinero, muestra un dato interesante. Se destina poco más del 75% del dinero asignado a sueldos de personal, si se adiciona bienes y servicios de consumo implica que, en estos dos rubros supera el 85% del dinero recibido.
+
+Es decir, que en lo que más gastan las más grandes universidades, no se destina hacia el mejoramiento de las instituciones, más bien, se destinan al gasto corriente. A la cuenta de inversión en bienes y servicios solo se destina 1%. Esto demuestra un gasto ineficiente en el mejoramiento de las universidades públicas.  
+
+<div/>
+```{r echo= FALSE, results='asis'}
+rm %>%
+  kbl(caption = "Mejores universidades latinoamerica",digits = 2) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+<div style="text-align: justify">
+
+Si se toma el ranking de las mejores 25 mejores universidades latinoamericanas a nivel global muestra que 6 pertenecen a Argentina, 6 pertenecen a Brasil, 4 a Colombia y 6 a Chile. Como se mostró anteriormente, el porcentaje de gasto en educación promedio de los mencionados países latinoamericanos fue menor a lo destinado por Ecuador durante más de una década. Sin embargo, no existe ninguna universidad ecuatoriana dentro de este ranking.  
+
+<div/>
+
+```{r echo= FALSE, results='asis'}
+rm1 %>%
+  kbl(caption = "Mejores universidades Ecuatorianas",digits = 2) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+
+<div style="text-align: justify">
+
+En el ranking global de las mejores 1000 universidades a nivel global solo aparecen 3 universidades ecuatorianas, dos son privadas y una pública. A pesar que la ESPOL recibe la mitad de la asignación de la UCE y Universidad de Guayaquil se encuentra en este listado.
+
+Sin lugar a duda, el gasto destinado a la educación es muy importante para el desarrollo de un país. Es una fuente prioritaria para el desarrollo, Ecuador inició un proceso importante al asignar mayor cantidad de recursos hacia este sector. Sin embargo, el uso del dinero no es eficiente, se lo destina al gasto corriente, dejando a un lado la inversión en el desarrollo de infraestructura, investigación e innovación. El ranking de universidades muestra este resultado, donde la calidad académica está muy por debajo de países latinoamericanos y del mundo.  
+
+
+
+<div/>

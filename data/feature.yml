@@ -1,0 +1,19 @@
+enable  : true
+title   : Servicios
+subtitle: >
+  Revisa la pestaña de servicios para más detalles.
+item    :
+  - icon  : ion-ios-people
+    title : Cursos o capacitaciones
+    description : >
+      100% prácticos para aplicación estudiantil o laboral
+
+  - icon  : ion-ios-telephone-outline
+    title : Asesorías
+    description : >
+      Personalizadas en función de los requerimientos
+      
+  - icon  : ion-ios-list-outline
+    title : Charlas
+    description : >
+      Participación en paneles o conversatorios

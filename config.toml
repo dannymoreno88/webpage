@@ -1,0 +1,102 @@
+baseURL = ""
+languageCode = "es-ecu"
+title = "DM Analytics"
+theme = "timer-hugo"
+ignoreFiles = ["_cache$"]
+
+# We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
+
+# Navbar Menus
+[[menu.main]]
+name    = "Acerca de mí"
+url     = "about"
+weight  = 2
+[[menu.main]]
+name    = "Servicios"
+url     = "service"
+weight  = 3
+[[menu.main]]
+name    = "Galería"
+url     = "gallery"
+weight  = 4
+[[menu.main]]
+name    = "Blog"
+url     = "blog"
+weight  = 5
+[[menu.main]]
+name    = "Contacto"
+url     = "contact"
+weight  = 6
+
+# Site Params
+[params]
+home = "Home"
+logo = "images/logo.jpg"
+dateFormat = "6 January 2006"
+# Meta data
+description = "Airspace Hugo theme"
+author = "Themefisher"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+# contact form action
+contactFormAction = "#" # contact form works with https://formspree.io
+
+# Banner Section
+[params.banner]
+enable  = true
+bgImage = "images/slider.jpg"
+heading = "HOLA MI NOMBRE ES DANNY MORENO, SOY:"
+description = "EXPERTO EN ANÁLISIS ECONÓMICO Y FINANCIERO, ANÁLISIS DE DATOS, GESTIÓN DE RIESGOS FINANCIEROS, EVALUACIÓN DE PROYECTOS, MODELOS ECONOMÉTRICOS, MACHINE LEARNING"
+# button
+btn     = false
+btnText = "Download More"
+btnURL  = "https://themefisher.com/"
+
+# flip text
+[[params.banner.flipText]]
+title   = "ECONOMISTA"
+[[params.banner.flipText]]
+title   = "ECONOMETRISTA"
+[[params.banner.flipText]]
+title   = "DATA SCIENTIST"
+[[params.banner.flipText]]
+title   = "BUSSINESS ANALYST"
+[[params.banner.flipText]]
+title   = "EXPERTO EN RIESGOS"
+
+
+
+# Homepage About Section
+[params.about]
+enable  = false
+title   = "ACERCA DE MÍ"
+content = "Soy de Quito, Ecuador; me gradué de la facultad de economía en la Pontificia Universidad Católica del Ecuador; estudié una Maestría en Gestión Económica y Financiera en Riesgos en la Universidad de Buenos Aires; y una Maestría en Econometría en la Universidad Torcuato di Tella."
+image   = "images/about/about.jpg"
+
+# Call to Action
+[params.cta]
+enable  = true
+title   = "¿TE PARECIO INTERESANTE?"
+content = "Se realizan ofertas especiales, si se adquiere más de un producto o servicio"
+btnText = "Contáctate conmigo"
+btnURL  = "/contact"
+
+# Portfolio Section On Homepage
+[params.portfolio]
+enable  = true
+title   = "PRODUCTOS"
+subtitle= "Los productos están destinados hacia los negocios que buscan mejorar su productividad, desarrollar sus productos y expandir su negocio. También se realizan estudios específicos económicos o financieros."
+
+
+# social icon
+[[params.socialIcon]]
+icon = "ion-social-facebook"
+url = "https://www.facebook.com/dannyjav8"
+
+[[params.socialIcon]]
+icon = "ion-social-linkedin"
+url = "https://www.linkedin.com/in/dannymorenob"
+
+[[params.socialIcon]]
+icon = "ion-ios-world"
+url = "https://rpubs.com/danny_jav8"

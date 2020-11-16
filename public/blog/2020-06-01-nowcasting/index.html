@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es-ecu"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="description" content="Airspace Hugo theme">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.76.5" />
+  
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modelo Nowcasting predicción ciclo económico Ecuador</title>
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" media="screen">
+</head><body><section class="top-bar animated-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="">
+						<img src="images/logo.jpg" alt="DM Analytics">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="about">Acerca de mí</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="service">Servicios</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="gallery">Galería</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="blog">Blog</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="contact">Contacto</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h2>Modelo Nowcasting predicción ciclo económico Ecuador</h2>
+					<div class="portfolio-meta">
+						<span>Wednesday, Oct 21, 2020</span>|
+						<span> Tags:
+							R Markdown, plot, regression
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="single-post">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				
+				<div class="post-img">
+					<img class="img-fluid" alt="" src="images/blog/post-5.jpg">
+				</div>
+				
+				<div class="post-content">
+					
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+
+
+<div style="text-align: justify">
+
+Proyectar como se comportará el crecimiento económico de un país permite tomar decisiones con anticipación, evitar perdidas y ajustarse al mercado. Los modelos nowcasting permiten que el ajuste sea muy cercano al real, debido a su capacidad de incorporar información de distintos sectores económicos. Usando variables con frecuencia mensual permiten proyectar variables con frecuencia trimestral.<br />
+
+<div/>
+
+<hr />
+<div id="breve-definición-del-modelo-nowcasting" class="section level1">
+<h1>Breve definición del modelo nowcasting</h1>
+<div style="text-align: justify">
+
+<p>Los modelos nowcasting se han vuelto populares especialmente para los bancos centrales, debido a que permiten proyectar el futuro en base al comportamiento de indicadores del pasado. La economía de un país se ve afectada por varios sectores económicos, por ejemplo el sector real, financiero, cambiario, etc. Este modelo permite incorporar todos estos sectores en el análisis y determinar la proporción de afectación que tienen en el crecimiento económico de un país.</p>
+<p>Existen varios tipos de modelos nowcasting. Sin embargo, para este caso se usará el que esta basado en la descomposición de factores. Esta metodología permite determinar de un gran numero de variables su aporte a la variación de una variable respuesta en este caso el PIB que se publica trimestralmente y con un retraso de tres meses en Ecuador.</p>
+<p>Una vez se obtiene las cargas factoriales, se realiza la proyección del PIB mediante el filtro de Kalman. La ventaja de usar este método es que permite que existan valores faltantes en la data es decir que no este balanceada o que no mantengan el mismo nivel de frecuencia, por ejemplo en este caso usamos variables mensuales para proyectar una variable trimestral.</p>
+<div/>
+
+<hr />
+</div>
+<div id="resultados" class="section level1">
+<h1>Resultados</h1>
+<div style="text-align: justify">
+
+<p>Usé 68 variables con frecuencia mensual y realice distintas metodologías de forecasting como: ARIMA, Neuronal Network (NN), Expectative maximization (EM), Filtro kalman en dos etapas (2s), Filtro Kalman en dos etapas agregado (2s_agg).</p>
+El ajuste del modelo 2s fue el siguiente:
+<div style="text-align: justify">
+<p><img src="/blog/2020-06-01-nowcasting_files/graph1.png" width="100%" alt="Modelo 2s"></p>
+</div>
+El ajuste del modelo 2s_agg fue el siguiente:
+<div style="text-align: justify">
+<p><img src="/blog/2020-06-01-nowcasting_files/graph2.png" width="100%" alt="Modelo 2s_agg"></p>
+</div>
+Para comparar los modelos se uso RMSE:
+<table class=" lightable-material lightable-striped lightable-hover" style='font-family: "Source Sans Pro", helvetica, sans-serif; margin-left: auto; margin-right: auto;'>
+<caption>
+<span id="tab:unnamed-chunk-1">Table 1: </span>RMSE de cada metodología
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Tipo
+</th>
+<th style="text-align:right;">
+2s
+</th>
+<th style="text-align:right;">
+2s_agg
+</th>
+<th style="text-align:right;">
+ARIMA
+</th>
+<th style="text-align:right;">
+NN
+</th>
+<th style="text-align:right;">
+EM
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+RMSE
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+</tr>
+</tbody>
+</table>
+<p>Los resultados señalan que los métodos con mayor ajuste son ARIMA, NN y EM. Sin embargo, se debe verificar las proyecciones para 2020.</p>
+<table class=" lightable-material lightable-striped lightable-hover" style='font-family: "Source Sans Pro", helvetica, sans-serif; margin-left: auto; margin-right: auto;'>
+<caption>
+<span id="tab:unnamed-chunk-2">Table 2: </span>Forecast de cada metodología
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+forecast
+</th>
+<th style="text-align:right;">
+2s
+</th>
+<th style="text-align:right;">
+2s_agg
+</th>
+<th style="text-align:right;">
+ARIMA
+</th>
+<th style="text-align:right;">
+NN
+</th>
+<th style="text-align:right;">
+EM
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+2020-03
+</td>
+<td style="text-align:right;">
+168407.0
+</td>
+<td style="text-align:right;">
+173411.4
+</td>
+<td style="text-align:right;">
+178891.0
+</td>
+<td style="text-align:right;">
+178782.0
+</td>
+<td style="text-align:right;">
+188638.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2020-06
+</td>
+<td style="text-align:right;">
+161373.1
+</td>
+<td style="text-align:right;">
+166193.4
+</td>
+<td style="text-align:right;">
+179189.6
+</td>
+<td style="text-align:right;">
+178537.4
+</td>
+<td style="text-align:right;">
+183257.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2020-09
+</td>
+<td style="text-align:right;">
+160791.8
+</td>
+<td style="text-align:right;">
+165491.1
+</td>
+<td style="text-align:right;">
+179641.3
+</td>
+<td style="text-align:right;">
+178327.1
+</td>
+<td style="text-align:right;">
+184411.5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2020-12
+</td>
+<td style="text-align:right;">
+162379.1
+</td>
+<td style="text-align:right;">
+167276.1
+</td>
+<td style="text-align:right;">
+180150.2
+</td>
+<td style="text-align:right;">
+178231.3
+</td>
+<td style="text-align:right;">
+184463.3
+</td>
+</tr>
+</tbody>
+</table>
+<p>Es evidente que ARIMA, NN y EM sobrestiman el resultado, en otras palabras no pueden captar que para 2020 existirá un decrecimiento. Así como lo demuestra el gráfico:</p>
+<div style="text-align: justify">
+<p><img src="/blog/2020-06-01-nowcasting_files/graph3.png" width="100%" alt="Forecast ARIMA y NN"></p>
+</div>
+<p>En definitiva, se concluye que usar modelos nowcasting presentan una ventaja significativa para la predicción del ciclo económico. Pueden captar variaciones rapidamente.</p>
+<div style="text-align: justify">
+<p><img src="/blog/2020-06-01-nowcasting_files/graph4.png" width="100%" alt="Forecast 2s y 2s_agg"></p>
+</div>
+<p>Por último se calcula la variación económica en función del año anterior:</p>
+<table class=" lightable-material lightable-striped lightable-hover" style='font-family: "Source Sans Pro", helvetica, sans-serif; margin-left: auto; margin-right: auto;'>
+<caption>
+<span id="tab:unnamed-chunk-3">Table 3: </span>Tasa variación PIB
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Metodo
+</th>
+<th style="text-align:right;">
+Porcentaje
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+2s
+</td>
+<td style="text-align:right;">
+-9.20
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2s_agg
+</td>
+<td style="text-align:right;">
+-6.50
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ARIMA
+</td>
+<td style="text-align:right;">
+-0.17
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NN
+</td>
+<td style="text-align:right;">
+-0.73
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+EM
+</td>
+<td style="text-align:right;">
+3.01
+</td>
+</tr>
+</tbody>
+</table>
+<p>Para los modelos nowcasting en 2020 existirá un decrecimiento de -6% o -9%. Por otro lado para el modelo ARIMA y NN el decrecimiento será de -0.16% y -0.72%. Mientras que para EM existirá un crecimiento de 3%.</p>
+<p>Se concluye que los modelos nowcasting son muy útlies, versatiles y eficaces para predecir a futuro el comporamiento de una variable especifica como el PIB. Sin lugar a duda, es una buena herramienta.</p>
+<div/>
+
+
+</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Call To Action Section Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2 class="title wow fadeInDown" data-wow-delay=".3s"
+            data-wow-duration="500ms">¿TE PARECIO INTERESANTE?</h1>
+            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
+              Se realizan ofertas especiales, si se adquiere más de un producto o servicio</p>
+            <a href="/contact" class="btn btn-default btn-contact wow fadeInDown"
+              data-wow-delay=".7s" data-wow-duration="500ms">Contáctate conmigo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Call To Action Section End -->
+
+
+<!-- Footer Section Start -->
+<footer id="footer">
+  <div class="container">
+    <div class="row content-justify-between">
+      <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+        <p class="copyright">Copyright:
+          <span>
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+          </span> Design and Developed by
+          <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>.
+          <br> Get More Bootstrap Template From Our
+          <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a>
+        </p>
+      </div>
+      <div class="col-md-4 col-12">
+        <!-- Social Media -->
+        <ul class="social text-center text-md-right text-lg-right">
+          
+          <li><a href="https://www.facebook.com/dannyjav8"><i class="ion-social-facebook"></i></a></li>
+          
+          <li><a href="https://www.linkedin.com/in/dannymorenob"><i class="ion-social-linkedin"></i></a></li>
+          
+          <li><a href="https://rpubs.com/danny_jav8"><i class="ion-ios-world"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="plugins/jQurey/jquery.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'Your ID', 'auto');
+  ga('send', 'pageview');
+</script></body>
+
+</html>

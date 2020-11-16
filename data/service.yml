@@ -1,0 +1,70 @@
+enable  : true
+title   : CURSOS, CAPACITACIONES Y ASESORIAS
+subtitle: >
+  La modalidad depende de tus requerimientos, puede ser presencial o virtual.
+image   : images/team.jpg
+serviceItem :
+  - icon  : ion-ios-monitor
+    title : Manejo paquetes estadisticos
+    description : >
+      Capacitación básica, media y avanzada en Excel, R,STATA,SPSS, E-views, Tableau, Power BI.
+  
+  - icon  : ion-ios-grid-view-outline
+    title : Excel Avanzado
+    description : >
+      Fórmulas y funciones anidadas, solver, formularios, tablas dinámicas, dashboards, macros.
+  
+  - icon  : ion-ios-drag
+    title : Estadística con Excel
+    description : >
+      Manejo bases de datos, estadística descriptiva, probabilidad, gráficos dinámicos, regresiones.
+
+  - icon  : ion-ios-glasses-outline
+    title : Estadística con R
+    description : >
+      Estadística descriptiva, estadística inferencial y probabilidad.
+
+  - icon  : ion-ios-calculator
+    title : Administración de negocio
+    description : >
+      Calcular costos e ingresos medios, marginales y puntos de quilibrio.
+
+  - icon  : ion-ios-settings-strong
+    title : Riesgos financieros
+    description : >
+      Conoce los riesgos en tu negocio o mercado, como calcularlos y mitigarlos.
+
+  - icon  : ion-ios-pie-outline
+    title : Finanzas para no financieros
+    description : >
+      Un curso básico para conocer cómo manejar un negocio eficientemente.
+
+  - icon  : ion-ios-analytics-outline
+    title : Econometría I
+    description : >
+      Regresiones lineales, no lineales y multivariantes.
+  
+  - icon  : ion-ios-more-outline
+    title : Econometría II
+    description : >
+      Medir y corregir supuestos de heterocedasticidad, homocedasticidad, multicolinealidad.
+  
+  - icon  : ion-ios-keypad-outline
+    title : Microeconometría I
+    description : >
+      Modelos probabilísticos: LOGIT, PROBIT, K-means, Random Forest, SVM, NN.
+      
+  - icon  : ion-ios-color-filter-outline
+    title : Microeconometría II
+    description : >
+      Modelos agrupamiento (clustering) y reducción de variables (Factores y Componentes Principales)
+
+  - icon  : ion-ios-pulse-strong
+    title : Macroconometría I
+    description : >
+      Modelos de predicción: AR,MA,ARIMA,SARIMA,K-means,NN.
+
+  - icon  : ion-ios-world-outline
+    title : Macroconometría II
+    description : >
+      Modelos VAR, VEC, Cointegración, Filtro de Kalman y Nowcasting.
