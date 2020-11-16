@@ -9,7 +9,7 @@ title: Evaluación de impacto
 type: portfolio
 ---
 
-Son análisis destinados a medir la eficiencia en la aplicación pasada o futura  de realizar una política de gobierno, política dentro de una empresa o de implementar un proyecto.
+Son análisis destinados a medir la eficiencia en la aplicación pasada o futura de realizar una política de gobierno, política dentro de una empresa o de implementar un proyecto.
 
 ### Evaluación de políticas públicas
 

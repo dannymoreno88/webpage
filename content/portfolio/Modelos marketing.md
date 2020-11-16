@@ -13,9 +13,9 @@ La segmentación de mercado es un análisis que permite entender cual es el perf
 
 ### Perfil del cliente
 
->Este análisis busca conocer cual es el perfil de nuestros compradores y porqué adquieren nuestros productos. Entender quien es nuestro cliente objetivo, es importante si queremos incrementar ventas, atraer nuevos consumidores o realizar una campaña de marketing.
+>Este análisis busca conocer cuál es el perfil de nuestros compradores y porqué adquieren nuestros productos. Entender quién es nuestro cliente objetivo, es importante si queremos incrementar ventas, atraer nuevos consumidores o realizar una campaña de marketing.
 
-### Clasifición del cliente
+### Clasificación del cliente
 
 >Clasificar y agrupar comportamientos o tipos de clientes, permite comprender: si existen nichos de mercado no atendidos; si se deben generar o adaptar productos para atender a sus requerimientos; si es necesario cambiar el enfoque del producto; si se crean productos o descuentos especiales; etc.
 

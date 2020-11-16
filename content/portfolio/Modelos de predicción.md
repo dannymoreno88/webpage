@@ -17,7 +17,7 @@ Los modelos de forecasting permiten predecir el futuro de una variable o su afec
 
 ### Estudio de incidencia
 
->Para proyectar eficientemente cualquier variable es necesario tomar en cuenta la influencia que tienen otras variables sobre esta, por ejemplo las ventas o la demanda del producto son variables que se ven afectadas por el ciclo económico del país, la cantidad de desempleo, el salario básico,impuestos, entre otros. Para realizar una buena proyección es necesario incluir todas las variables significativas que le afectan.
+>Para proyectar eficientemente cualquier variable es necesario tomar en cuenta la influencia que tienen otras variables sobre esta, por ejemplo, las ventas o la demanda del producto son variables que se ven afectadas por el ciclo económico del país, la cantidad de desempleo, el salario básico, impuestos, entre otros. Para realizar una buena proyección es necesario incluir todas las variables significativas que le afectan.
 
 ### Análisis de escenarios
 

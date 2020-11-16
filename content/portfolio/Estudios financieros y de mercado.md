@@ -12,7 +12,7 @@ date: "2018-07-12T16:54:54+06:00"
 
 La economía es un ser cambiante, influenciado por factores internos y externos. Su variación a su vez afecta al comportamiento de los individuos y de los negocios.
 
-Muchos negocios toman decisiones sobre ventas, captación de clientes, inventarios, inversiones, entre otros. Solamente tomando en cuenta la perspectiva del negocio. Dejando de lado la influencia del entorno macroeconómico y microeconómico. Este error, conlleva a perdidas financieras, incumplimiento de objetivos y perdida de eficiencia.
+Muchos negocios toman decisiones sobre ventas, captación de clientes, inventarios, inversiones, entre otros. Solamente tomando en cuenta la perspectiva del negocio. Dejando de lado la influencia del entorno macroeconómico y microeconómico. Este error, conlleva a pérdidas financieras, incumplimiento de objetivos y perdida de eficiencia.
 
 ### Estudio de mercado
 
@@ -24,4 +24,4 @@ Muchos negocios toman decisiones sobre ventas, captación de clientes, inventari
 
 ### Estudio financiero
 
->Esta destinado hacia negocios activos, que buscan determinar el uso adecuado de sus recursos, buscando minimizar los gastos y maximizando ganancias. Se realiza un análisis de las cuentas o variables que influyen en el negocio en el tiempo y se determina la influencia de cada una en el rendimiento del negocio. Se genera además un análisis individual por producto o servicio para determinar mejoras o focalización.
+>Está destinado hacia negocios activos, que buscan determinar el uso adecuado de sus recursos, buscando minimizar los gastos y maximizando ganancias. Se realiza un análisis de las cuentas o variables que influyen en el negocio en el tiempo y se determina la influencia de cada una en el rendimiento del negocio. Se genera además un análisis individual por producto o servicio para determinar mejoras o focalización.
