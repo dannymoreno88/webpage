@@ -29,7 +29,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			{{ range $index, $element := .Site.Data.about.aboutItem }}
-			<div class="col-lg-4 px-0">
+			<div class="col-lg-4 px-3">
 				{{ $class := add $index 1 }}
 				<div class="block about-feature-{{ $class }} wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">
 					{{ with .title }}<h2>{{ . }}</h2>{{ end }}

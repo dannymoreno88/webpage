@@ -2,10 +2,10 @@ enable  : true
 title   : Un breve resumen
 
 description: >
-  Soy de Quito, Ecuador; me gradué de la facultad de economía en la Pontificia Universidad Católica del Ecuador; estudié una Maestría en Gestión Económica y Financiera en Riesgos en la Universidad de Buenos Aires; y una Maestría en Econometría en la Universidad Torcuato di Tella.
+  Soy de Quito, Ecuador; me gradué en la facultad de economía de la Pontificia Universidad Católica del Ecuador; estudié una Maestría en Gestión Económica y Financiera en Riesgos en la Universidad de Buenos Aires; y una Maestría en Econometría en la Universidad Torcuato di Tella.
   <br>
   <br>
-  Trabajé para instituciones financieras y ONG desarrollando modelos econométricos, manejando bases de datos, elaborando análisis económicos y financieros. Pude viajar por todo el Ecuador brindando capacitaciones, asesorías y entendiendo distintas realidades y necesidades.
+  Trabajé para instituciones financieras y ONG desarrollando modelos econométricos, manejando bases de datos, elaborando análisis económicos y financieros.
 
 image   : images/about/about.jpg
 
@@ -15,7 +15,7 @@ aboutItem:
       Los datos hoy en día son el producto más valioso y rentable.
   - title : 
     description: > 
-      Tengo habilidad para transformar lo complicado en simple.
+      Tengo habilidad para transformar lo complicado en sencillo.
   - title : 
     description: > 
       Publico investigaciones sobre temas actuales o relevantes.

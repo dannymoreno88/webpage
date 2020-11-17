@@ -1,11 +1,14 @@
 enable  : true
-contactFormTitle    : CONTACTATE CONMIGO
+image   : images/contact.jpg
+contactFormTitle    : CONTÁCTATE CONMIGO
 contactFormSubtitle : >
-  Llena los datos y me pondré en contacto lo más pronto posible.
+  Llena los datos y me pondré en contacto lo más pronto posible o envíame un mensaje directamente.
 mapTitle    : 
 mapSubtitle : >
   
 officeAddress1 : Quito, Ecuador
+officeAddress2 : Ecuador
 mail1 : dannyjav8@gmail.com
+#mail2 : danny_jav8@gmail.com
 phone1: +593 986854964
 

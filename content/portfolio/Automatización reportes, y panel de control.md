@@ -14,11 +14,12 @@ Es común que se requiera información recurrente para la toma de decisiones. Si
 
 ### Automatizar reportes o informes periódicos
 
->Este producto está destinado hacia empresas que buscan mejorar los tiempos de respuesta, optimizar sus procesos y reducir el tiempo de personal en actividades repetitivas. El objetivo no es generar un software para su aplicación, más bien es usar eficientemente las herramientas básicas que todos conocen como Microsoft Office más una programación sencilla. Es un proceso de fácil aprendizaje, transferible hacia cualquier área y extremadamente útil.
+>Este producto está destinado hacia empresas que buscan mejorar los tiempos de respuesta, optimizar sus procesos y reducir el tiempo de personal en actividades repetitivas. El objetivo no es generar un software para su aplicación. Sino usar eficientemente las herramientas básicas que todos conocen como Microsoft Office más una programación sencilla. Es un proceso de fácil aprendizaje, transferible hacia cualquier área y extremadamente útil.
 
 ### Automatizar procesos
 
->Automatizar reportes, permitió generar eficiencia y eficacia por tanto los procesos deben ser de igual manera optimizados. Un análisis del flujo de trabajo brindará varias ideas sobre su perfeccionamiento.
+>Luego de automatizar reportes se busca optimizar los procesos. Un análisis del flujo de trabajo brindará varias ideas sobre su perfeccionamiento. En caso de ser necesario se realizarán nuevas automatizaciones de reportes.
 
 ### Elaboración de paneles de control o dashboards
->El proceso inicia con la elaboración de indicadores de eficiencia, luego en función de los requerimientos se puede elaborar un panel o varios, que sirvan para el control, presentación e interpretación de la situación de la empresa, de un producto o de un área específica.
+
+>El proceso inicia con la elaboración de indicadores de eficiencia, luego en función de los requerimientos se puede elaborar un panel o varios, que sirvan para el control, presentación e interpretación de la situación de la empresa, de un producto, o de un área específica.

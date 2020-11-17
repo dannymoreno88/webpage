@@ -13,11 +13,11 @@ Los modelos de forecasting permiten predecir el futuro de una variable o su afec
 
 ### Estudio de estacionalidad
 
->Conocer específicamente las fechas, feriados o festividades en las que las ventas se incrementan o cuando las ventas decrecen es importante para planificar, comprar o requerir personal. El análisis de estacionalidad permite entender, planificar y proyectar las variables en función de su estacionalidad. Permitiendo que la empresa planifique a futuro, mejorando la eficiencia y disminuyendo costos.
+>Conocer específicamente las fechas, feriados o festividades en las que las ventas se incrementan o cuando las ventas decrecen es importante para planificar, comprar o requerir personal. El análisis de estacionalidad permite entender, planificar y proyectar las variables en función de su estacionalidad. Permitiendo que la empresa planifiquen a futuro, mejorando la eficiencia y disminuyendo costos.
 
 ### Estudio de incidencia
 
->Para proyectar eficientemente cualquier variable es necesario tomar en cuenta la influencia que tienen otras variables sobre esta, por ejemplo, las ventas o la demanda del producto son variables que se ven afectadas por el ciclo económico del país, la cantidad de desempleo, el salario básico, impuestos, entre otros. Para realizar una buena proyección es necesario incluir todas las variables significativas que le afectan.
+>Para proyectar eficientemente cualquier variable es necesario tomar en cuenta la influencia que tienen otras variables sobre esta, por ejemplo, las ventas o la demanda del producto son variables que se ven afectadas por el ciclo económico del país, la cantidad de desempleo, el salario básico, impuestos, entre otros. Para realizar una buena proyección es necesario incluir todas las variables significativas que sean estadísticamente relevantes.
 
 ### Análisis de escenarios
 

@@ -1,5 +1,5 @@
 ---
-caption: Mejora el enfoque de tus productos y atrae clientes
+caption: Mejora el enfoque de productos y atrae clientes
 category:
 - fashion
 - package

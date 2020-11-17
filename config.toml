@@ -1,4 +1,4 @@
-baseURL = "https://dmanalytics.netlify.app"
+baseURL = "https://dmanalytics.netlify.app/"
 languageCode = "es-ecu"
 title = "DM Analytics"
 theme = "timer-hugo"
@@ -37,7 +37,7 @@ dateFormat = "6 January 2006"
 description = "Airspace Hugo theme"
 author = "Themefisher"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalitycsID = "G-GYYDWLKEEG"
 # contact form action
 contactFormAction = "#" # contact form works with https://formspree.io
 
@@ -45,7 +45,7 @@ contactFormAction = "#" # contact form works with https://formspree.io
 [params.banner]
 enable  = true
 bgImage = "images/slider.jpg"
-heading = "HOLA MI NOMBRE ES DANNY MORENO, SOY:"
+heading = "BIENVENIDO MI NOMBRE ES DANNY MORENO, SOY:"
 description = "EXPERTO EN ANÁLISIS ECONÓMICO Y FINANCIERO, ANÁLISIS DE DATOS, GESTIÓN DE RIESGOS FINANCIEROS, EVALUACIÓN DE PROYECTOS, MODELOS ECONOMÉTRICOS, MACHINE LEARNING"
 # button
 btn     = false
@@ -85,13 +85,13 @@ btnURL  = "/contact"
 [params.portfolio]
 enable  = true
 title   = "PRODUCTOS"
-subtitle= "Los productos están destinados hacia los negocios que buscan mejorar su productividad, desarrollar sus productos y expandir su negocio. También se realizan estudios específicos económicos o financieros."
+subtitle= "Los productos están destinados hacia los negocios que buscan mejorar su productividad, desarrollar sus productos y expandir su negocio. También se realizan estudios específicos en economía o finanzas. Haz clic en detalle para mayor información."
 
 
 # social icon
-[[params.socialIcon]]
-icon = "ion-social-facebook"
-url = "https://www.facebook.com/dannyjav8"
+#[[params.socialIcon]]
+#icon = "ion-social-facebook"
+#url = "https://www.facebook.com/dannyjav8"
 
 [[params.socialIcon]]
 icon = "ion-social-linkedin"

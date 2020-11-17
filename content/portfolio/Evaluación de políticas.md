@@ -1,5 +1,5 @@
 ---
-caption: Políticas públicas, privadas o proyectos
+caption: Estima la eficiencia de políticas
 category:
 - typography
 - letters
