@@ -1,0 +1,284 @@
+---
+title: Modelo Nowcasting predicción ciclo económico Ecuador
+author: Danny Moreno
+date: '2020-10-21'
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+image: images/blog/post-5.jpg
+output:
+  html_document:
+    toc: true
+    number_sections: true
+    fig_caption: true
+    theme: cosmo
+---
+
+<link href="/www.dmanalytic.comrmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/www.dmanalytic.comrmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+<script src="/www.dmanalytic.comrmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/www.dmanalytic.comrmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+
+
+<div style="text-align: justify">
+
+Proyectar como se comportará el crecimiento económico de un país permite tomar decisiones con anticipación, evitar perdidas y ajustarse al mercado. Los modelos nowcasting permiten que el ajuste sea muy cercano al real, debido a su capacidad de incorporar información de distintos sectores económicos. Usando variables con frecuencia mensual permiten proyectar variables con frecuencia trimestral.<br />
+
+<div/>
+
+<hr />
+<div id="breve-definición-del-modelo-nowcasting" class="section level1">
+<h1>Breve definición del modelo nowcasting</h1>
+<div style="text-align: justify">
+
+<p>Los modelos nowcasting se han vuelto populares especialmente para los bancos centrales, debido a que permiten proyectar el futuro en base al comportamiento de indicadores del pasado. La economía de un país se ve afectada por varios sectores económicos, por ejemplo el sector real, financiero, cambiario, etc. Este modelo permite incorporar todos estos sectores en el análisis y determinar la proporción de afectación que tienen en el crecimiento económico de un país.</p>
+<p>Existen varios tipos de modelos nowcasting. Sin embargo, para este caso se usará el que esta basado en la descomposición de factores. Esta metodología permite determinar de un gran numero de variables su aporte a la variación de una variable respuesta en este caso el PIB que se publica trimestralmente y con un retraso de tres meses en Ecuador.</p>
+<p>Una vez se obtiene las cargas factoriales, se realiza la proyección del PIB mediante el filtro de Kalman. La ventaja de usar este método es que permite que existan valores faltantes en la data es decir que no este balanceada o que no mantengan el mismo nivel de frecuencia, por ejemplo en este caso usamos variables mensuales para proyectar una variable trimestral.</p>
+<div/>
+
+<hr />
+</div>
+<div id="resultados" class="section level1">
+<h1>Resultados</h1>
+<div style="text-align: justify">
+
+<p>Usé 68 variables con frecuencia mensual y realice distintas metodologías de forecasting como: ARIMA, Neuronal Network (NN), Expectative maximization (EM), Filtro kalman en dos etapas (2s), Filtro Kalman en dos etapas agregado (2s_agg).</p>
+El ajuste del modelo 2s fue el siguiente:
+<div style="text-align: justify">
+<p><img src="/blog/2020-06-01-nowcasting_files/graph1.png" width="100%" alt="Modelo 2s"></p>
+</div>
+El ajuste del modelo 2s_agg fue el siguiente:
+<div style="text-align: justify">
+<p><img src="/blog/2020-06-01-nowcasting_files/graph2.png" width="100%" alt="Modelo 2s_agg"></p>
+</div>
+Para comparar los modelos se uso RMSE:
+<table class=" lightable-material lightable-striped lightable-hover" style='font-family: "Source Sans Pro", helvetica, sans-serif; margin-left: auto; margin-right: auto;'>
+<caption>
+<span id="tab:unnamed-chunk-1">Table 1: </span>RMSE de cada metodología
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Tipo
+</th>
+<th style="text-align:right;">
+2s
+</th>
+<th style="text-align:right;">
+2s_agg
+</th>
+<th style="text-align:right;">
+ARIMA
+</th>
+<th style="text-align:right;">
+NN
+</th>
+<th style="text-align:right;">
+EM
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+RMSE
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+</tr>
+</tbody>
+</table>
+<p>Los resultados señalan que los métodos con mayor ajuste son ARIMA, NN y EM. Sin embargo, se debe verificar las proyecciones para 2020.</p>
+<table class=" lightable-material lightable-striped lightable-hover" style='font-family: "Source Sans Pro", helvetica, sans-serif; margin-left: auto; margin-right: auto;'>
+<caption>
+<span id="tab:unnamed-chunk-2">Table 2: </span>Forecast de cada metodología
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+forecast
+</th>
+<th style="text-align:right;">
+2s
+</th>
+<th style="text-align:right;">
+2s_agg
+</th>
+<th style="text-align:right;">
+ARIMA
+</th>
+<th style="text-align:right;">
+NN
+</th>
+<th style="text-align:right;">
+EM
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+2020-03
+</td>
+<td style="text-align:right;">
+168407.0
+</td>
+<td style="text-align:right;">
+173411.4
+</td>
+<td style="text-align:right;">
+178891.0
+</td>
+<td style="text-align:right;">
+178782.0
+</td>
+<td style="text-align:right;">
+188638.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2020-06
+</td>
+<td style="text-align:right;">
+161373.1
+</td>
+<td style="text-align:right;">
+166193.4
+</td>
+<td style="text-align:right;">
+179189.6
+</td>
+<td style="text-align:right;">
+178537.4
+</td>
+<td style="text-align:right;">
+183257.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2020-09
+</td>
+<td style="text-align:right;">
+160791.8
+</td>
+<td style="text-align:right;">
+165491.1
+</td>
+<td style="text-align:right;">
+179641.3
+</td>
+<td style="text-align:right;">
+178327.1
+</td>
+<td style="text-align:right;">
+184411.5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2020-12
+</td>
+<td style="text-align:right;">
+162379.1
+</td>
+<td style="text-align:right;">
+167276.1
+</td>
+<td style="text-align:right;">
+180150.2
+</td>
+<td style="text-align:right;">
+178231.3
+</td>
+<td style="text-align:right;">
+184463.3
+</td>
+</tr>
+</tbody>
+</table>
+<p>Es evidente que ARIMA, NN y EM sobrestiman el resultado, en otras palabras no pueden captar que para 2020 existirá un decrecimiento. Así como lo demuestra el gráfico:</p>
+<div style="text-align: justify">
+<p><img src="/blog/2020-06-01-nowcasting_files/graph3.png" width="100%" alt="Forecast ARIMA y NN"></p>
+</div>
+<p>En definitiva, se concluye que usar modelos nowcasting presentan una ventaja significativa para la predicción del ciclo económico. Pueden captar variaciones rapidamente.</p>
+<div style="text-align: justify">
+<p><img src="/blog/2020-06-01-nowcasting_files/graph4.png" width="100%" alt="Forecast 2s y 2s_agg"></p>
+</div>
+<p>Por último se calcula la variación económica en función del año anterior:</p>
+<table class=" lightable-material lightable-striped lightable-hover" style='font-family: "Source Sans Pro", helvetica, sans-serif; margin-left: auto; margin-right: auto;'>
+<caption>
+<span id="tab:unnamed-chunk-3">Table 3: </span>Tasa variación PIB
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Metodo
+</th>
+<th style="text-align:right;">
+Porcentaje
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+2s
+</td>
+<td style="text-align:right;">
+-9.20
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2s_agg
+</td>
+<td style="text-align:right;">
+-6.50
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ARIMA
+</td>
+<td style="text-align:right;">
+-0.17
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NN
+</td>
+<td style="text-align:right;">
+-0.73
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+EM
+</td>
+<td style="text-align:right;">
+3.01
+</td>
+</tr>
+</tbody>
+</table>
+<p>Para los modelos nowcasting en 2020 existirá un decrecimiento de -6% o -9%. Por otro lado para el modelo ARIMA y NN el decrecimiento será de -0.16% y -0.72%. Mientras que para EM existirá un crecimiento de 3%.</p>
+<p>Se concluye que los modelos nowcasting son muy útlies, versatiles y eficaces para predecir a futuro el comporamiento de una variable especifica como el PIB. Sin lugar a duda, es una buena herramienta.</p>
+<div/>
+
+
+</div>
