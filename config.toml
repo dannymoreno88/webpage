@@ -1,6 +1,6 @@
-baseURL = "https://dmanalytics.netlify.app/"
+baseURL = "www.dmanalytic.com"
 languageCode = "es-ecu"
-title = "DM Analytics"
+title = "DM Analytic"
 theme = "timer-hugo"
 ignoreFiles = ["_cache$"]
 
@@ -31,7 +31,7 @@ weight  = 6
 # Site Params
 [params]
 home = "Home"
-logo = "images/logo.jpg"
+logo = "images/logo.png"
 dateFormat = "6 January 2006"
 # Meta data
 description = "Airspace Hugo theme"
@@ -85,7 +85,7 @@ btnURL  = "/contact"
 [params.portfolio]
 enable  = true
 title   = "PRODUCTOS"
-subtitle= "Los productos están destinados hacia los negocios que buscan mejorar su productividad, desarrollar sus productos y expandir su negocio. También se realizan estudios específicos en economía o finanzas. Haz clic en detalle para mayor información."
+subtitle= "Están destinados hacia los negocios que buscan mejorar su productividad, desarrollar sus productos y expandir su negocio. También se realizan estudios específicos en economía o finanzas. Haz clic en detalle para mayor información."
 
 
 # social icon
