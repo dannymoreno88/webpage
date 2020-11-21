@@ -1,4 +1,4 @@
-baseURL = "www.dmanalytic.com"
+baseURL = "https://www.dmanalytic.com"
 languageCode = "es-ecu"
 title = "DM Analytic"
 theme = "timer-hugo"
