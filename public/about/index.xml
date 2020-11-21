@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Acerca de mí on DM Analytics</title>
-    <link>https://dmanalytics.netlify.app/about/</link>
-    <description>Recent content in Acerca de mí on DM Analytics</description>
+    <title>Acerca de mí on DM Analytic</title>
+    <link>www.dmanalytic.com/about/</link>
+    <description>Recent content in Acerca de mí on DM Analytic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-ecu</language>
-    <lastBuildDate>Thu, 12 Jul 2018 18:19:33 +0600</lastBuildDate><atom:link href="https://dmanalytics.netlify.app/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Jul 2018 18:19:33 +0600</lastBuildDate><atom:link href="www.dmanalytic.com/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

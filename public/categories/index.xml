@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on DM Analytics</title>
-    <link>https://dmanalytics.netlify.app/categories/</link>
-    <description>Recent content in Categories on DM Analytics</description>
+    <title>Categories on DM Analytic</title>
+    <link>www.dmanalytic.com/categories/</link>
+    <description>Recent content in Categories on DM Analytic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-ecu</language>
-    <lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://dmanalytics.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="www.dmanalytic.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>R</title>
-      <link>https://dmanalytics.netlify.app/categories/r/</link>
+      <link>www.dmanalytic.com/categories/r/</link>
       <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dmanalytics.netlify.app/categories/r/</guid>
+      <guid>www.dmanalytic.com/categories/r/</guid>
       <description></description>
     </item>
     

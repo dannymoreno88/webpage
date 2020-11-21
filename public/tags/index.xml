@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on DM Analytics</title>
-    <link>https://dmanalytics.netlify.app/tags/</link>
-    <description>Recent content in Tags on DM Analytics</description>
+    <title>Tags on DM Analytic</title>
+    <link>www.dmanalytic.com/tags/</link>
+    <description>Recent content in Tags on DM Analytic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-ecu</language>
-    <lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://dmanalytics.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="www.dmanalytic.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>plot</title>
-      <link>https://dmanalytics.netlify.app/tags/plot/</link>
+      <link>www.dmanalytic.com/tags/plot/</link>
       <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dmanalytics.netlify.app/tags/plot/</guid>
+      <guid>www.dmanalytic.com/tags/plot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>https://dmanalytics.netlify.app/tags/r-markdown/</link>
+      <link>www.dmanalytic.com/tags/r-markdown/</link>
       <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dmanalytics.netlify.app/tags/r-markdown/</guid>
+      <guid>www.dmanalytic.com/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>regression</title>
-      <link>https://dmanalytics.netlify.app/tags/regression/</link>
+      <link>www.dmanalytic.com/tags/regression/</link>
       <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dmanalytics.netlify.app/tags/regression/</guid>
+      <guid>www.dmanalytic.com/tags/regression/</guid>
       <description></description>
     </item>
     

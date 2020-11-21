@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Galería on DM Analytics</title>
-    <link>https://dmanalytics.netlify.app/gallery/</link>
-    <description>Recent content in Galería on DM Analytics</description>
+    <title>Galería on DM Analytic</title>
+    <link>www.dmanalytic.com/gallery/</link>
+    <description>Recent content in Galería on DM Analytic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-ecu</language>
-    <lastBuildDate>Sat, 14 Jul 2018 16:19:08 +0600</lastBuildDate><atom:link href="https://dmanalytics.netlify.app/gallery/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Jul 2018 16:19:08 +0600</lastBuildDate><atom:link href="www.dmanalytic.com/gallery/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
